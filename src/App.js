@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Home } from './components/Home/Home';
 import { About } from './components/About/About';
+import { Users } from './components/Users/Users';
+import { Playlist } from './components/Playlist/Playlist';
 
 function App() {
   return (
@@ -20,20 +22,26 @@ function App() {
               <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/users">Users</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/playlists">Playlists</Link>
             </li>
           </ul>
         </div>
       </nav>
 
       <div className="container">
-        <div className="row">
+        <div className="row mt-3">
           <Switch>
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route path="/about">
-              <About />
+            <Route path="/users">
+              <Users />
+            </Route>
+            <Route path="/playlists">
+              <Playlist />
             </Route>
           </Switch>
         </div>

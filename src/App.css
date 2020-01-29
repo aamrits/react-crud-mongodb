@@ -1,0 +1,14 @@
+body {
+  padding: 0;
+  box-sizing: border-box;
+}
+btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+btn:focus:visited {
+  border-color: transparent;
+}
+btn:active {
+  border-color: transparent;
+}
